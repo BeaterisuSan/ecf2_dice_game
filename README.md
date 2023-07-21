@@ -8,5 +8,5 @@ A chaque tour, le joueur a son score temporaire initialisé à 0. Il peut lancer
 Le résultat d'un lancer est ajouté au Global.
 Lors de son tour, le joueur peut décider de cliquer sur l'option Hold qui permet d'envoyer les points du Round vers le Global.
 Ce sera alors au joueur suivant.
-Au lancer de dé, s'il obtient 1, son score Round est perdu et c'est au joueur suivant. Le premier joueur qui obtien 100
+Au lancer de dé, s'il obtient 1, son score Round est perdu et c'est au joueur suivant. Le premier joueur qui obtient 100
 points est le gagnant.
