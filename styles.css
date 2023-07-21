@@ -1,0 +1,43 @@
+body, html {
+    height:100%;
+    background : linear-gradient(to right, rgb(197, 68, 68), white);
+    }
+  
+  body {
+    height:100%;
+    border: 20px solid rgb(225, 136, 136);
+    font-family: "Lato", sans-serif;
+    }
+  
+  h1 {
+    font-weight: bold;
+    color: rgb(226, 43, 43);
+    }
+  
+  P {
+    font-weight: bold;
+  }
+  
+  img {
+      width : 70px;
+      height : 70px;
+      margin-top: 10%;
+  }
+  
+  .players {
+    font-size: 20px;
+  }
+  
+  .global {
+    font-size: 40px;
+  }
+  
+  .current {
+    font-size: 10px;
+  }
+  
+  .active {
+    color : rgb(0, 255, 76);
+    font-size: 25px;
+  }
+  
