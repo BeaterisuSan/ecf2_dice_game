@@ -1,11 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dice Game</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700;900&display=swap');</style>
+    <link rel="stylesheet" href="styles.css"/>
+    
+    <title>Jeu de dé</title>
+
 </head>
 <body>
+  
     
+    <div class="container">
+   
+    <div class="text-center" id="titreJeu">
+        <h1>ROLL THE DICE</h1>
+    </div>
+
+        <!--Bouton New Game-->
+        <div class="row py-2">
+            <div class="col text-center ">
+                <button type="button" class="btn btn-light border border-danger" id="launchGame" id="selectPlayerOne" >
+                    <span class=" bi bi-plus-circle text-danger "> NEW GAME</span></button>                
+                    
+            </div>
+        </div>
+
+        <!--Player 1 et Player 2-->
+        <div class="row" >
+            <div class="col text-center"class="players">
+              <p  class=" player active" id="playerOne" id="playerOneActif">PLAYER 1</p>
+            </div>            
+            <div class="col">
+            </div>
+            <div class="col text-center" class="players">
+                <p class="player active" id="playerTwo" id="playerTwoActif">PLAYER 2</p>
+            </div>
+        </div>
+
+        <!--Score global player one compteur-->
+        <div class="row text-center">
+            <div class="col">
+                <p class="globalScore" id="globalScoreCounter"  id=^playerOne">0</p>
+            
+            </div>
+            <!--Insertion du dé en aléatoire-->
+            <div class="col" id="dice-wrapper">
+                <img id="diceImage"  id="dicesValue" src="images/dice1.png" alt="dice1">
+            </div>
+            <!--Score global player two compteur-->
+            <div class="col">
+                <p class="globalScore" id="globalScoreCounterTwo" id="playerTwo">0</p>
+
+            </div>
+        </div>
+
+        <!--Boutons roll dice et current score-->
+        <div class="row py-4 text-center">
+            <div class="col"></div>
+            <div class="col text-center py-3 text-white bg-danger rounded ">
+                <p>CURRENT</p>
+                <p class="current" id="currentScore">0</p>
+            </div>
+        
+            <div class="col-6 text-center py-4 ">              
+                <button type="button" class="btn btn-light border border-danger" >
+                <span class=" bi bi-arrow-clockwise text-danger text-center " id="changeImage"  id="currentScoreTwo" id="currentScore" id="rollDice"> ROLL DICE</span></button>
+        
+            </div>
+
+            <div class="col text-center py-4 text-white bg-danger rounded">            
+                <p>CURRENT</p>
+                <p class="current" id="currentScoreTwo">0</p>
+            </div>
+            <div class="col"></div>
+        </div> 
+    
+        <!--Bouton hold-->
+        <div class="row">
+            <div class="col text-center">
+                <button type="button" class="btn btn-light border border-danger" >
+                <span  id="buttonAddGlobalScore" class="bi bi-save text-danger "> HOLD</span></button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+       
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    
+    <script src="jeu_de_de.js"></script>
+
 </body>
 </html>
