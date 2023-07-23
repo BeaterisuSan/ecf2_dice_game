@@ -50,7 +50,7 @@ let images = ["images/dice1.png", "images/dice2.png", "images/dice3.png", "image
       currentScoreCounter = currentScoreCounter += (randomNumber + 1);
       currentScoreCounterTwo = currentScoreCounterTwo += (randomNumber + 1);
       switchPlayer();
-         
+        
         
       if(activePlayer === playerOne){
         if ((randomNumber+1) > 1){
@@ -65,28 +65,77 @@ let images = ["images/dice1.png", "images/dice2.png", "images/dice3.png", "image
         currentScoreCounter = 0;
           }               
         }
-
-        if ((randomNumber + 1) ===  1){
-          if (activePlayer === playerOne){
-            activePlayer = playerTwo;
-            currentScoreCounter = 0;
-            currentScoreCounterTwo = 0;
-            document.querySelector("#currentScoreTwo").innerHTML = 0;
+          
+        
+        
+        /*if (randomNumber ===  1){
+            if (activePlayer === playerOne){
+            playerTwo;
+            currentScoreCounter = currentScoreCounter +=0;
+            currentScoreCounterTwo = currentScoreCounterTwo += (randomNumber + 1);
+            document.querySelector("#currentScoreTwo").innerHTML = currentScoreCounterTwo;
             document.querySelector("#currentScore").innerHTML = currentScoreCounter;      
-          }
-         }
-            
-      if((randomNumber + 1) === 1){
-          if (activePlayer === playerTwo) {
-            activePlayer = playerOne;
-            currentScoreCounter = 0;
-            currentScoreCounterTwo = 0;             
-            document.querySelector("#currentScore").innerHTML = 0;
+           }
+
+             
+        if(randomNumber === 1){
+            if (activePlayer === playerTwo) {
+            playerOne;
+            currentScoreCounter = currentScoreCounter += (randomNumber + 1);
+            currentScoreCounterTwo = currentScoreCounterTwo +=0;
+            document.querySelector("#currentScore").innerHTML = currentScoreCounter;
             document.querySelector("#currentScoreTwo").innerHTML = currentScoreCounterTwo;          
          }
        }
-     }  switchPlayer();
-          }                     
+     }  switchPlayer();*/
+
+
+     if ((randomNumber + 1) ===  1){
+      if (activePlayer === playerOne){
+        activePlayer = playerTwo;        
+        currentScoreCounterTwo = currentScoreCounterTwo += (randomNumber + 1);
+        currentScoreCounter === 0;
+        document.querySelector("#currentScoreTwo").innerHTML = currentScoreCounter;
+        document.querySelector("#currentScore").innerHTML = 0;      
+      }
+     
+        
+  else if((randomNumber + 1) === 1){
+      if (activePlayer === playerTwo) {
+        activePlayer = playerOne;
+        currentScoreCounter = currentScoreCounter += (randomNumber + 1);
+        currentScoreCounterTwo === 0;             
+        document.querySelector("#currentScore").innerHTML = currentScoreCounter;
+        document.querySelector("#currentScoreTwo").innerHTML = 0;         
+     }
+   }
+ } switchPlayer();  }
+
+
+
+    
+    /*if ((randomNumber + 1) ===  1){ 
+        if (activePlayer === playerOne){
+        switchPlayer();
+        currentScoreCounter === 0;
+        currentScoreCounterTwo === currentScoreCounterTwo + (randomNumber + 1);
+        document.querySelector("#currentScoreTwo").innerHTML = currentScoreCounterTwo;
+        document.querySelector("#currentScore").innerHTML = currentScoreCounter;      
+      }
+     }
+        
+
+  if((randomNumber + 1) === 1){    
+      if (activePlayer === playerTwo) {
+        switchPlayer();
+        currentScoreCounterTwo === 0;
+        currentScoreCounter === currentScoreCounter + (randomNumber + 1);      
+        document.querySelector("#currentScore").innerHTML = currentScoreCounter;
+        document.querySelector("#currentScoreTwo").innerHTML = currentScoreCounterTwo;        
+      }
+    }   switchPlayer(); */                   
+  }
+ 
                      
 let button = document.getElementById("changeImage");
 button.addEventListener("click", rollDice);
